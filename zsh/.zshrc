@@ -80,7 +80,7 @@ ENABLE_CORRECTION="false"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-
+source ~/.zsh_profile
 # User configuration
 export SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh
 # export MANPATH="/usr/local/man:$MANPATH"
