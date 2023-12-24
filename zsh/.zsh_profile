@@ -9,8 +9,9 @@ addToPathFront() {
         export PATH=$1:$PATH
     fi
 }
-
+export N_PREFIX="$HOME/.local/n"
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
-
+addToPathFront $HOME/.local/n/bin
+addToPathFront $HOME/.local/.npm-global/bin
 
