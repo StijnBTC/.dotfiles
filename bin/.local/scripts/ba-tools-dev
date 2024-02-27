@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+#start ghost
+tmux new-session -d -s ghost -c /home/stijn/Development/work/BitcoinAlpha/ghost /home/stijn/Development/work/BitcoinAlpha/ghost/run
+
+#start ba-tools
+tmux new-session -d -s ba-tools -c /home/stijn/Development/work/BitcoinAlpha/ba-tools/ nvim
+tmux new-window -t ba-tools -c /home/stijn/Development/work/BitcoinAlpha/ba-tools/ npm run start:dev
+
+#start ba-web
+tmux new-session -d -s ba-tools-web -c /home/stijn/Development/work/BitcoinAlpha/ba-tools-web/ nvim
+tmux new-window -t ba-tools-web -c /home/stijn/Development/work/BitcoinAlpha/ba-tools-web/ ng serve --host 0.0.0.0
+
+tmux a

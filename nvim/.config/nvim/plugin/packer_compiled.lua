@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/stijn/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/stijn/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/stijn/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stijn/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["hardtime.nvim"] = {
+    loaded = true,
+    path = "/home/stijn/.local/share/nvim/site/pack/packer/start/hardtime.nvim",
+    url = "https://github.com/m4xshen/hardtime.nvim"
   },
   harpoon = {
     loaded = true,
@@ -148,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stijn/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/stijn/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -225,11 +240,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stijn/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/home/stijn/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   }
 }
 
