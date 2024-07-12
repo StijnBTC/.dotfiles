@@ -1,1 +1,1 @@
-require("stijnbtc")
+require("stijn")
