@@ -69,7 +69,7 @@ return {
 			},
 		})
 		r.noremap("n", "<leader>ff", ":Telescope find_files<cr>", "find files")
-		r.noremap("n", "<leader><leader>", ":Telescope git_files<cr>", "find git files")
+		r.noremap("n", "<leader><leader>", ":Telescope find_files<cr>", "find git files")
 		r.noremap("n", "<leader>u", ":Telescope undo<cr>", "undo tree")
 		r.noremap("n", "\\", function()
 			telescope.extensions.live_grep_args.live_grep_args({
@@ -78,12 +78,12 @@ return {
 			})
 		end, "live grep")
 		r.noremap("n", "<leader>o", ":Telescope oldfiles<cr>", "old files")
-	r.noremap("n", "<leader>\\c", function()
+		r.noremap("n", "<leader>\\c", function()
 			lga_shortcuts.grep_word_under_cursor({ postfix = " --hidden " })
 		end, "grep under cursor")
-		r.noremap("n", "<leader>f", function()
-			telescope.extensions.file_browser.file_browser()
-		end, "browse files")
+		-- r.noremap("n", "<leader>f", function()
+		-- 	telescope.extensions.file_browser.file_browser()
+		-- end, "browse files")
 		r.noremap("n", "<leader>.", function()
 			telescope.extensions.file_browser.file_browser({
 				path = vim.fn.stdpath("config"),
